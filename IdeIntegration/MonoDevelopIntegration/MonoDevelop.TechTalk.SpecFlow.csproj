@@ -28,7 +28,8 @@
     <WarningLevel>4</WarningLevel>
     <CustomCommands>
       <CustomCommands>
-        <Command type="AfterBuild" command="mdtool setup pack MonoDevelop.TechTalk.SpecFlow.addin.xml -d:${TargetDir}" workingdir="${TargetDir}" />
+        <Command type="AfterBuild" command="mdtool setup pack MonoDevelop.TechTalk.SpecFlow.addin.xml" workingdir="${TargetDir}" />
+        <Command type="AfterBuild" command="mdtool setup rep-build ${TargetDir}" workingdir="${TargetDir}" />
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
